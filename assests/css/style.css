@@ -1,0 +1,198 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* FONT FAMILY  */
+.main_font {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.second_font {
+    font-family: "Roboto", sans-serif;
+}
+
+/* COLORS  */
+.main_color {
+    color: #0b1c39;
+}
+
+.second_color {
+    color: #777;
+}
+
+.items_color {
+    color: #444444;
+}
+
+/* HEADER START */
+.icon i,
+#nav-item a {
+    transition: all 0.5s linear;
+    font-weight: 600;
+}
+
+.icon i:hover,
+.btn:hover i,
+#nav-item a:hover {
+    color: red;
+}
+
+#navbar_container {
+    background-color: #fff;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.overflow img {
+    transition: all 0.7s linear;
+}
+
+.overflow img:hover {
+    transform: scale(1.1);
+}
+
+/* HEADER END */
+
+/* MAIN START  */
+.main_container {
+    background-color: #f0f0f2;
+}
+
+.fourthimage {
+    margin-top: 40px;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+}
+
+.btn i {
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+#card_section {
+    background-color: #fff;
+}
+
+#button {
+    width: 180px;
+    height: 50px;
+    background-color: #4a4a4b;
+    color: #fff;
+    font-size: large;
+    z-index: 1;
+    position: relative;
+    border: none;
+}
+
+#button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: red;
+    transition: all 0.2s linear;
+    z-index: -1;
+}
+
+#button:hover::before {
+    width: 100%;
+}
+
+.watch_box {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    border-bottom: 4px solid red;
+}
+
+.watch_box img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.watch_box::before {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease-in;
+    padding-top: 10px;
+    margin-top: 300px;
+}
+
+.watch_box:hover::before {
+    background-color: red;
+    content: "Add to cart";
+    color: #fff;
+    top: 15%;
+}
+
+.image_section {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/videoimage/sectin_bg1.png);
+    transition: all 0.9S ease-in;
+}
+
+.image_section:hover {
+    background-color: rgba(2, 5, 12, 0.5);
+    background-blend-mode: multiply;
+}
+
+.watch_image img {
+    height: 500px;
+}
+
+.video:hover button {
+    transform: scale(1.2);
+}
+
+/* MAIN END */
+
+/* FOOTER START  */
+#small_section {
+    background-color: red !important;
+}
+
+#hover p {
+    transition: all 0.3s ease-in;
+}
+
+#hover p:hover {
+    color: red;
+    margin-left: 10px;
+}
+
+#iconbar i,
+.video button {
+    transition: all 0.5s ease-in;
+}
+
+#iconbar i:hover {
+    color: red;
+    transform: rotateY(340deg);
+}
+
+/* FOOTER END */
